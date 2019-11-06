@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 //#import "../Tasks/Task Model/LSITask.h"
+#import "LSITask.h"
 
 @interface TasksTests : XCTestCase
 
