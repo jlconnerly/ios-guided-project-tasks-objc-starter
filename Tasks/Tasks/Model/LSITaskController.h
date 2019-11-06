@@ -18,6 +18,11 @@
 
 @property (nonatomic, readonly) NSArray *tasks; //dont need copy, because there is no setter
 
+@property (nonatomic, class, readonly) int totalTasksCreated;
+
+//+ (void)setTotalTasksCreatedL(int)count;
+//+ (int)totalTasksCreated;
+
 // Method Declarations
 - (void)addTask:(LSITask *)task;
 - (void)removeTask:(LSITask *)task;

@@ -10,6 +10,7 @@
 //#import "../Tasks/Task Model/LSITask.h"
 #import "LSITask.h"
 #import "LSITaskController.h"
+#import "NSString+LSIRepeatString.h"
 
 @interface TasksTests : XCTestCase
 
@@ -26,9 +27,17 @@
     [task setName:@"Was the car"];
     
     NSLog(@"Task: %@", task.name);
-    NSArray *tasks = taskController.tasks;
+    //NSArray *tasks = taskController.tasks;
     [taskController addTask:task];
     NSLog(@"Tasks: %@", taskController.tasks);
+    
+    NSString *parrot = @"Hello";
+    NSLog(@"Parrot: %@", [parrot repeatString]);
+    
+    //task.totalTaskCreated not how we use this
+    
+    NSLog(@"TasksCreated: %d", LSITaskController.totalTasksCreated);
+    
 }
 
 @end
